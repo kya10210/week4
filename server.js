@@ -16,7 +16,7 @@ app.set('view engine', 'html');
 
 app.use(express.static('images'));
 app.use(express.static('css'));
-//app.use(express.static('views'));   test this
+//app.use(express.static('views'));
 
 app.get('/', function (req, res) {
     res.render('index.html');
@@ -40,3 +40,5 @@ app.get('/listtasks', function (req, res) {
 });
 app.listen(8080);
 console.log('This server is running on 8080');
+console.log("Hi");
+
